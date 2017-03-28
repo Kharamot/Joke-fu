@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="gbf-8Q-mQv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke-Fu-->
+        <scene sceneID="wiT-Gv-AIK">
+            <objects>
+                <viewController storyboardIdentifier="JokeFuViewController" id="UgN-fT-UC4" customClass="JokeFuViewController" customModule="Joke_fu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b9Q-yX-vRn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ukt-Tx-ymi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W97-sh-3RR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Draw a straight line" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5D-Yq-1R1">
+                                <rect key="frame" x="114" y="119" width="147" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="from the start location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOa-im-lxQ">
+                                <rect key="frame" x="103" y="148" width="170" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to the finish location." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s51-GR-F68">
+                                <rect key="frame" x="108" y="177" width="160" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="START" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gaT-bu-Oxb">
+                                <rect key="frame" x="8" y="255" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9a-Wx-IX0">
+                                <rect key="frame" x="314" y="255" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pass.png" translatesAutoresizingMaskIntoConstraints="NO" id="uBk-pG-WfW">
+                                <rect key="frame" x="8" y="396" width="359" height="234"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="234" id="PU9-b9-PCO"/>
+                                    <constraint firstAttribute="width" constant="359" id="dhY-fv-M5m"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78a-lr-Qly">
+                                <rect key="frame" x="151" y="629" width="72" height="30"/>
+                                <state key="normal" title="Try Again?"/>
+                                <connections>
+                                    <action selector="TryAgainButtonPressed:" destination="UgN-fT-UC4" eventType="touchUpInside" id="Hht-lW-9vf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gaT-bu-Oxb" firstAttribute="top" secondItem="s51-GR-F68" secondAttribute="bottom" constant="57" id="4rq-8v-e1F"/>
+                            <constraint firstItem="uBk-pG-WfW" firstAttribute="top" secondItem="s51-GR-F68" secondAttribute="bottom" constant="198" id="6WX-VD-lvj"/>
+                            <constraint firstAttribute="trailing" secondItem="Y9a-Wx-IX0" secondAttribute="trailing" constant="8" id="Dyu-tw-Yr4"/>
+                            <constraint firstItem="s51-GR-F68" firstAttribute="centerX" secondItem="W97-sh-3RR" secondAttribute="centerX" id="FMh-o3-Zqj"/>
+                            <constraint firstItem="Y9a-Wx-IX0" firstAttribute="top" secondItem="s51-GR-F68" secondAttribute="bottom" constant="57" id="I0O-Bp-x2c"/>
+                            <constraint firstItem="K5D-Yq-1R1" firstAttribute="top" secondItem="b9Q-yX-vRn" secondAttribute="bottom" constant="25" id="L3X-wX-F7S"/>
+                            <constraint firstItem="eOa-im-lxQ" firstAttribute="top" secondItem="K5D-Yq-1R1" secondAttribute="bottom" constant="8" id="LqO-v9-aPt"/>
+                            <constraint firstItem="s51-GR-F68" firstAttribute="top" secondItem="eOa-im-lxQ" secondAttribute="bottom" constant="8" id="OFE-tr-Wwb"/>
+                            <constraint firstItem="78a-lr-Qly" firstAttribute="centerX" secondItem="W97-sh-3RR" secondAttribute="centerX" id="TZj-fV-4ph"/>
+                            <constraint firstItem="eOa-im-lxQ" firstAttribute="centerX" secondItem="W97-sh-3RR" secondAttribute="centerX" id="Xfr-7M-M2M"/>
+                            <constraint firstItem="uBk-pG-WfW" firstAttribute="centerX" secondItem="W97-sh-3RR" secondAttribute="centerX" id="cGW-2M-w2R"/>
+                            <constraint firstItem="78a-lr-Qly" firstAttribute="top" secondItem="uBk-pG-WfW" secondAttribute="bottom" constant="-1" id="mih-n5-O45"/>
+                            <constraint firstItem="gaT-bu-Oxb" firstAttribute="leading" secondItem="W97-sh-3RR" secondAttribute="leading" constant="8" id="um9-zO-BBt"/>
+                            <constraint firstItem="K5D-Yq-1R1" firstAttribute="centerX" secondItem="W97-sh-3RR" secondAttribute="centerX" id="uyh-BF-e6Q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Joke-Fu" prompt="Joke Bar Buddy" id="LRf-6S-10b"/>
+                    <connections>
+                        <outlet property="PassFailImage" destination="uBk-pG-WfW" id="6o9-bo-5Ks"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tn8-B0-3MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="GKU-MQ-0ii">
+                    <connections>
+                        <action selector="handlePanWithRecognizer:" destination="UgN-fT-UC4" id="BnH-Y4-dSD"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="501.49925037481262"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MainViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="Joke_fu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oc1-VI-tdV">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Joker Bar Buddy" id="pDq-lU-Lop"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YFX-DN-mcd">
+                                <rect key="frame" x="135" y="153" width="104" height="30"/>
+                                <state key="normal" title="Check Joke-Fu"/>
+                                <connections>
+                                    <action selector="CheckJokeFuButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgP-Tc-Fv4"/>
+                                    <segue destination="UgN-fT-UC4" kind="show" id="GeJ-Mi-05o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiO-gN-OwW">
+                                <rect key="frame" x="157" y="191" width="61" height="30"/>
+                                <state key="normal" title="Get Joke"/>
+                                <connections>
+                                    <action selector="GetJokeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GA5-VM-FdF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K8T-xR-EnW">
+                                <rect key="frame" x="159" y="115" width="57" height="30"/>
+                                <state key="normal" title="Find Bar"/>
+                                <connections>
+                                    <action selector="FindBarButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="euq-fQ-WRG"/>
+                                    <segue destination="nw9-5o-nqa" kind="show" id="yw5-X4-sE7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-Sv-GRc">
+                                <rect key="frame" x="166" y="248" width="44" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlm-wD-ZD3">
+                                <rect key="frame" x="164" y="277" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Line 3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-G7-MXW">
+                                <rect key="frame" x="164" y="306" width="47" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qwa-eN-S39">
+                                <rect key="frame" x="159" y="354" width="57" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dlm-wD-ZD3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DwE-yT-nSG"/>
+                            <constraint firstItem="IiO-gN-OwW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EiE-eq-0b2"/>
+                            <constraint firstItem="YFX-DN-mcd" firstAttribute="top" secondItem="K8T-xR-EnW" secondAttribute="bottom" constant="8" id="F3T-c0-6Dd"/>
+                            <constraint firstItem="dbU-G7-MXW" firstAttribute="top" secondItem="dlm-wD-ZD3" secondAttribute="bottom" constant="8" id="Hjp-2S-57n"/>
+                            <constraint firstItem="dbU-G7-MXW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MS2-3i-UgX"/>
+                            <constraint firstItem="IiO-gN-OwW" firstAttribute="top" secondItem="YFX-DN-mcd" secondAttribute="bottom" constant="8" id="bel-Ne-BH2"/>
+                            <constraint firstItem="K8T-xR-EnW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="cwf-Wt-9Tm"/>
+                            <constraint firstItem="K8T-xR-EnW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="djo-Lb-BFj"/>
+                            <constraint firstItem="pFy-Sv-GRc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eii-kj-4ZV"/>
+                            <constraint firstItem="Qwa-eN-S39" firstAttribute="top" secondItem="dbU-G7-MXW" secondAttribute="bottom" constant="27" id="gNC-OI-UJT"/>
+                            <constraint firstItem="pFy-Sv-GRc" firstAttribute="top" secondItem="IiO-gN-OwW" secondAttribute="bottom" constant="27" id="qwn-Va-cGu"/>
+                            <constraint firstItem="dlm-wD-ZD3" firstAttribute="top" secondItem="pFy-Sv-GRc" secondAttribute="bottom" constant="8" id="tLJ-uG-S8A"/>
+                            <constraint firstItem="Qwa-eN-S39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wgG-IF-c2g"/>
+                            <constraint firstItem="YFX-DN-mcd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xu6-CS-BtS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" prompt="Joker Bar Buddy" id="bcC-9w-1Vs"/>
+                    <connections>
+                        <outlet property="AnswerLabel" destination="Qwa-eN-S39" id="FRe-9G-3m7"/>
+                        <outlet property="Line1Label" destination="pFy-Sv-GRc" id="5Q4-7K-pp3"/>
+                        <outlet property="Line2Label" destination="dlm-wD-ZD3" id="ybh-vm-p24"/>
+                        <outlet property="Line3Label" destination="dbU-G7-MXW" id="Mr7-HI-2ox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="123.68815592203899"/>
+        </scene>
+        <!--Find Bars-->
+        <scene sceneID="dvR-gb-4Eq">
+            <objects>
+                <viewController storyboardIdentifier="FindBarViewController" id="nw9-5o-nqa" customClass="FindBarViewController" customModule="Joke_fu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7qc-vT-Sd0"/>
+                        <viewControllerLayoutGuide type="bottom" id="qco-43-7F9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eZR-nV-I2c">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="yzp-mL-3zk">
+                                <rect key="frame" x="0.0" y="102" width="375" height="520"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="6Cg-HI-RV7"/>
+                                    <constraint firstAttribute="height" constant="520" id="W08-3c-WHG"/>
+                                </constraints>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sM-sM-ZR7">
+                                <rect key="frame" x="124" y="637" width="126" height="30"/>
+                                <state key="normal" title="Show Nearby Bars"/>
+                                <connections>
+                                    <action selector="ShowBarsButtonPressed:" destination="nw9-5o-nqa" eventType="touchUpInside" id="NIV-z9-tQq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yzp-mL-3zk" firstAttribute="top" secondItem="7qc-vT-Sd0" secondAttribute="bottom" constant="8" id="6Kk-eb-fEe"/>
+                            <constraint firstItem="8sM-sM-ZR7" firstAttribute="centerX" secondItem="eZR-nV-I2c" secondAttribute="centerX" id="STr-yd-lEB"/>
+                            <constraint firstAttribute="trailing" secondItem="yzp-mL-3zk" secondAttribute="trailing" id="Vod-cd-S68"/>
+                            <constraint firstItem="8sM-sM-ZR7" firstAttribute="top" secondItem="yzp-mL-3zk" secondAttribute="bottom" constant="15" id="jCl-6E-EOg"/>
+                            <constraint firstItem="qco-43-7F9" firstAttribute="top" secondItem="yzp-mL-3zk" secondAttribute="bottom" constant="45" id="p4n-G6-9l1"/>
+                            <constraint firstItem="yzp-mL-3zk" firstAttribute="leading" secondItem="eZR-nV-I2c" secondAttribute="leading" id="yZy-sQ-H2g"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Find Bars" prompt="Joke Bar Buddy" id="isD-1y-QjU"/>
+                    <connections>
+                        <outlet property="MKMapView" destination="yzp-mL-3zk" id="Amt-Qa-56o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f53-du-6Mf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784.8" y="-400.74962518740631"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5cU-vc-NTx">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gbf-8Q-mQv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QWa-4F-CcR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zPf-5D-FBZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a07-fL-dTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168.80000000000001" y="777.66116941529242"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pass.png" width="350" height="218"/>
+    </resources>
+</document>

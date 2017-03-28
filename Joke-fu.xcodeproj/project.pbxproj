@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F5695761E88B085000B9E44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5695751E88B085000B9E44 /* AppDelegate.swift */; };
+		2F5695781E88B085000B9E44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5695771E88B085000B9E44 /* ViewController.swift */; };
+		2F56957B1E88B085000B9E44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F5695791E88B085000B9E44 /* Main.storyboard */; };
+		2F56957D1E88B085000B9E44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F56957C1E88B085000B9E44 /* Assets.xcassets */; };
+		2F5695801E88B085000B9E44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F56957E1E88B085000B9E44 /* LaunchScreen.storyboard */; };
+		2F5695881E88C146000B9E44 /* FindBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5695871E88C146000B9E44 /* FindBarViewController.swift */; };
+		2F56958A1E88C193000B9E44 /* JokeFuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5695891E88C193000B9E44 /* JokeFuViewController.swift */; };
+		2F9714AF1E8A0F9F00CDD688 /* Fail.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9714AD1E8A0F9E00CDD688 /* Fail.png */; };
+		2F9714B01E8A0F9F00CDD688 /* pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F9714AE1E8A0F9E00CDD688 /* pass.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2F5695721E88B085000B9E44 /* Joke-fu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Joke-fu.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F5695751E88B085000B9E44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F5695771E88B085000B9E44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F56957A1E88B085000B9E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F56957C1E88B085000B9E44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F56957F1E88B085000B9E44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F5695811E88B085000B9E44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F5695871E88C146000B9E44 /* FindBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindBarViewController.swift; sourceTree = "<group>"; };
+		2F5695891E88C193000B9E44 /* JokeFuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JokeFuViewController.swift; sourceTree = "<group>"; };
+		2F9714AD1E8A0F9E00CDD688 /* Fail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Fail.png; sourceTree = "<group>"; };
+		2F9714AE1E8A0F9E00CDD688 /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pass.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2F56956F1E88B085000B9E44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2F5695691E88B085000B9E44 = {
+			isa = PBXGroup;
+			children = (
+				2F5695741E88B085000B9E44 /* Joke-fu */,
+				2F5695731E88B085000B9E44 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2F5695731E88B085000B9E44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2F5695721E88B085000B9E44 /* Joke-fu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2F5695741E88B085000B9E44 /* Joke-fu */ = {
+			isa = PBXGroup;
+			children = (
+				2F9714AD1E8A0F9E00CDD688 /* Fail.png */,
+				2F9714AE1E8A0F9E00CDD688 /* pass.png */,
+				2F5695751E88B085000B9E44 /* AppDelegate.swift */,
+				2F5695771E88B085000B9E44 /* ViewController.swift */,
+				2F5695791E88B085000B9E44 /* Main.storyboard */,
+				2F5695871E88C146000B9E44 /* FindBarViewController.swift */,
+				2F56957C1E88B085000B9E44 /* Assets.xcassets */,
+				2F56957E1E88B085000B9E44 /* LaunchScreen.storyboard */,
+				2F5695811E88B085000B9E44 /* Info.plist */,
+				2F5695891E88C193000B9E44 /* JokeFuViewController.swift */,
+			);
+			path = "Joke-fu";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2F5695711E88B085000B9E44 /* Joke-fu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F5695841E88B085000B9E44 /* Build configuration list for PBXNativeTarget "Joke-fu" */;
+			buildPhases = (
+				2F56956E1E88B085000B9E44 /* Sources */,
+				2F56956F1E88B085000B9E44 /* Frameworks */,
+				2F5695701E88B085000B9E44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Joke-fu";
+			productName = "Joke-fu";
+			productReference = 2F5695721E88B085000B9E44 /* Joke-fu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2F56956A1E88B085000B9E44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Kameron Haramoto";
+				TargetAttributes = {
+					2F5695711E88B085000B9E44 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2F56956D1E88B085000B9E44 /* Build configuration list for PBXProject "Joke-fu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2F5695691E88B085000B9E44;
+			productRefGroup = 2F5695731E88B085000B9E44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2F5695711E88B085000B9E44 /* Joke-fu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2F5695701E88B085000B9E44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5695801E88B085000B9E44 /* LaunchScreen.storyboard in Resources */,
+				2F9714B01E8A0F9F00CDD688 /* pass.png in Resources */,
+				2F56957D1E88B085000B9E44 /* Assets.xcassets in Resources */,
+				2F56957B1E88B085000B9E44 /* Main.storyboard in Resources */,
+				2F9714AF1E8A0F9F00CDD688 /* Fail.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2F56956E1E88B085000B9E44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F56958A1E88C193000B9E44 /* JokeFuViewController.swift in Sources */,
+				2F5695781E88B085000B9E44 /* ViewController.swift in Sources */,
+				2F5695761E88B085000B9E44 /* AppDelegate.swift in Sources */,
+				2F5695881E88C146000B9E44 /* FindBarViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2F5695791E88B085000B9E44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F56957A1E88B085000B9E44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2F56957E1E88B085000B9E44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2F56957F1E88B085000B9E44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2F5695821E88B085000B9E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2F5695831E88B085000B9E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2F5695851E88B085000B9E44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Joke-fu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maga.Joke-fu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2F5695861E88B085000B9E44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Joke-fu/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "maga.Joke-fu";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F56956D1E88B085000B9E44 /* Build configuration list for PBXProject "Joke-fu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5695821E88B085000B9E44 /* Debug */,
+				2F5695831E88B085000B9E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2F5695841E88B085000B9E44 /* Build configuration list for PBXNativeTarget "Joke-fu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F5695851E88B085000B9E44 /* Debug */,
+				2F5695861E88B085000B9E44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2F56956A1E88B085000B9E44 /* Project object */;
+}
