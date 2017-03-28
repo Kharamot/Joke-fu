@@ -8,11 +8,17 @@
 
 import UIKit
 
-class JokeFuViewController: UIViewController {
+class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBOutlet weak var PassFailImage: UIImageView!
     
+    @IBOutlet weak var StartLabel: UILabel!
+    @IBOutlet weak var EndLabel: UILabel!
     
+    let threshold: CGFloat = 15.0
+    var startPoint: CGPoint!
+    var endPoint: CGPoint!
+    var dotView: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +26,10 @@ class JokeFuViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         PassFailImage.isHidden = true
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector (handlePan))
+        panGestureRecognizer.delegate = self
+        self.view.addGestureRecognizer(panGestureRecognizer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,14 +39,49 @@ class JokeFuViewController: UIViewController {
     
     @IBAction func TryAgainButtonPressed(_ sender: UIButton) {
         PassFailImage.isHidden = true
+        dotView.removeFromSuperview()
     }
 
     @IBAction func handlePan(recognizer: UIPanGestureRecognizer)
     {
-        let dotView = UIView(frame: CGRect(x: point.x, y: point.y, width: 5.0, height:5.0))
+        let point = recognizer.location(in: self.view)
+        
+        
+        dotView = UIView(frame: CGRect(x: point.x, y: point.y, width: 5.0, height:5.0))
         
         dotView.backgroundColor = UIColor.blue
         self.view.addSubview(dotView)
+        
+        if(recognizer.state == .began)
+        {
+            self.startPoint = point
+        }
+        if(recognizer.state == .changed)
+        {
+            if(point.y > startPoint.y + threshold || point.y < startPoint.y - threshold)
+            {
+                self.PassFailImage.image = #imageLiteral(resourceName: "Fail.png")
+                return
+            }
+        }
+        if(recognizer.state == .ended)
+        {
+            self.endPoint = point
+            passFail()
+            PassFailImage.isHidden = false
+        }
+    }
+    
+    func passFail()
+    {
+        if(!self.StartLabel.frame.contains(self.startPoint))
+        {
+            self.PassFailImage.image = #imageLiteral(resourceName: "Fail.png")
+        }
+        else if(!self.EndLabel.frame.contains(self.endPoint))
+        {
+            self.PassFailImage.image = #imageLiteral(resourceName: "Fail.png")
+        }
     }
     /*
     // MARK: - Navigation

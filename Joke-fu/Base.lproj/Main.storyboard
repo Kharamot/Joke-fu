@@ -45,8 +45,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FINISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9a-Wx-IX0">
-                                <rect key="frame" x="314" y="255" width="53" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FINISH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y9a-Wx-IX0">
+                                <rect key="frame" x="315" y="255" width="53" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -86,7 +86,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Joke-Fu" prompt="Joke Bar Buddy" id="LRf-6S-10b"/>
                     <connections>
+                        <outlet property="EndLabel" destination="Y9a-Wx-IX0" id="fmf-tu-2kc"/>
                         <outlet property="PassFailImage" destination="uBk-pG-WfW" id="6o9-bo-5Ks"/>
+                        <outlet property="StartLabel" destination="gaT-bu-Oxb" id="3JQ-nn-8Vu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tn8-B0-3MH" userLabel="First Responder" sceneMemberID="firstResponder"/>
