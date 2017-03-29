@@ -39,14 +39,19 @@ class JokeFuViewController: UIViewController, UIGestureRecognizerDelegate {
     
     @IBAction func TryAgainButtonPressed(_ sender: UIButton) {
         PassFailImage.isHidden = true
-        dotView.removeFromSuperview()
+        for view in self.view.subviews
+        {
+            if(view.backgroundColor == UIColor.blue)
+            {
+                view.removeFromSuperview()
+            }
+        }
+        PassFailImage.image = #imageLiteral(resourceName: "pass.png")
     }
 
     @IBAction func handlePan(recognizer: UIPanGestureRecognizer)
     {
         let point = recognizer.location(in: self.view)
-        
-        
         dotView = UIView(frame: CGRect(x: point.x, y: point.y, width: 5.0, height:5.0))
         
         dotView.backgroundColor = UIColor.blue
