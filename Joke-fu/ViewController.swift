@@ -51,6 +51,7 @@ class ViewController: UIViewController {
     }
     
     
+    
     func handleResponse (data: Data?, response: URLResponse?, error: Error?) {
         if (error != nil) {
             print("error: \(error!.localizedDescription)") }
@@ -70,15 +71,17 @@ class ViewController: UIViewController {
         if let jsonObj = try? JSONSerialization.jsonObject(with: data!, options: []) {
             let jsonDict = jsonObj as! [String: AnyObject]
             let joke = jsonDict["joke"] as! [String: AnyObject]
-            self.Line1Label.text = joke["line1"] as! String?
-            self.Line2Label.text = joke["line2"] as! String?
-            self.Line3Label.text = joke["line3"] as! String?
-            self.AnswerLabel.text = joke["answer"] as! String?
-            
-            self.Line1Label.isHidden = false
-            self.Line2Label.isHidden = false
-            self.Line3Label.isHidden = false
-            self.AnswerLabel.isHidden = false
+            DispatchQueue.main.async {
+                self.Line1Label.text = joke["line1"] as! String?
+                self.Line2Label.text = joke["line2"] as! String?
+                self.Line3Label.text = joke["line3"] as! String?
+                self.AnswerLabel.text = joke["answer"] as! String?
+                
+                self.Line1Label.isHidden = false
+                self.Line2Label.isHidden = false
+                self.Line3Label.isHidden = false
+                self.AnswerLabel.isHidden = false
+            }
         } else {
             print("error: invalid JSON data")
         }
